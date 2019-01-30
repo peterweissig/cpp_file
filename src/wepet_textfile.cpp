@@ -3,8 +3,8 @@
 * wepet_textfile.cpp                                                          *
 * ==================                                                          *
 *                                                                             *
-* Version: 1.0.6                                                              *
-* Date   : 18.10.15                                                           *
+* Version: 1.0.7                                                              *
+* Date   : 30.01.19                                                           *
 * Author : Peter Weissig                                                      *
 *                                                                             *
 * For help or bug report please visit:                                        *
@@ -176,7 +176,7 @@ bool cTextFile::SaveString(const std::string &filename,
   const std::string &data) {
 
     std::ofstream fout(filename.data());
-    if (fout == NULL) {
+    if (!fout) {
         last_error_ = "can not save to file \"" + filename + "\"";
         return false;
     }
@@ -192,7 +192,7 @@ bool cTextFile::LoadString(const std::string &filename, std::string &data) {
     std::stringstream ss;
 
     std::ifstream fin(filename.data());
-    if (fin == NULL) {
+    if (!fin) {
         last_error_ = "can not load from file \"" + filename + "\"";
         return false;
     }

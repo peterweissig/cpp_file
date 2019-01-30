@@ -3,8 +3,8 @@
 * wepet_fileparser.cpp                                                        *
 * ====================                                                        *
 *                                                                             *
-* Version: 1.0.2                                                              *
-* Date   : 13.10.15                                                           *
+* Version: 1.0.3                                                              *
+* Date   : 30.01.19                                                           *
 * Author : Peter Weissig                                                      *
 *                                                                             *
 * For help or bug report please visit:                                        *
@@ -655,7 +655,7 @@ bool cFileParser::saveToFile(const std::string filename) {
     }
 
     std::ofstream ofile(filename.data());
-    if (ofile == NULL) {
+    if (!ofile) {
         last_error_ = "can not open file \"" + filename + "\"";
         return false;
     }
@@ -674,7 +674,7 @@ bool cFileParser::loadFromFile(const std::string filename) {
     }
 
     std::ifstream ifile(filename.data());
-    if (ifile == NULL) {
+    if (!ifile) {
         last_error_ = "can not open file \"" + filename + "\"";
         return false;
     }

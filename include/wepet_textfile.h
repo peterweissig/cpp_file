@@ -3,8 +3,8 @@
 * wepet_textfile.h                                                            *
 * ================                                                            *
 *                                                                             *
-* Version: 1.0.6                                                              *
-* Date   : 18.10.15                                                           *
+* Version: 1.0.7                                                              *
+* Date   : 30.01.19                                                           *
 * Author : Peter Weissig                                                      *
 *                                                                             *
 * For help or bug report please visit:                                        *

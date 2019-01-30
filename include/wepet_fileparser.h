@@ -3,8 +3,8 @@
 * wepet_fileparser.h                                                          *
 * ==================                                                          *
 *                                                                             *
-* Version: 1.0.2                                                              *
-* Date   : 13.10.15                                                           *
+* Version: 1.0.3                                                              *
+* Date   : 30.01.19                                                           *
 * Author : Peter Weissig                                                      *
 *                                                                             *
 * For help or bug report please visit:                                        *
